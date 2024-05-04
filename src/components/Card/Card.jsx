@@ -102,7 +102,7 @@ function ExpandedCard({param, setExpanded}) {
     return (
         <div style={{background: param.color.backGround, boxShadow: param.color.boxShadow}} className="ExpandedCard">
 
-            <div>
+            <div style={{alignSelf: 'flex-end', cursor: 'pointer', color: 'white'}}>
                 <FaTimes onClick={setExpanded} />
             </div>
             <span>{param.title}</span>
